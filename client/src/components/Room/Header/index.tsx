@@ -1,9 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Hamburger, Copy, Door } from '@components/Icons';
 import { AvatarStack, Avatar } from '@primer/components';
 import S from './style';
 
 const Header: React.FC = () => {
+  const history = useHistory();
+
   return (
     <S.Wrapper>
       <S.HamburgerButton>
@@ -26,7 +29,7 @@ const Header: React.FC = () => {
             src="https://avatars.githubusercontent.com/github"
           />
         </AvatarStack>
-        <S.DoorButton>
+        <S.DoorButton onClick={() => history.push('/')}>
           <Door size={24} />
         </S.DoorButton>
       </S.RightWrapper>
