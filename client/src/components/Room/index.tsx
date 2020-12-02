@@ -1,10 +1,10 @@
 import React from 'react';
-import RoomComponent from '@components/Room';
+import RoomHeader from './Header';
 
 const Room: React.FC = () => {
   return (
     <>
-      <RoomComponent />
+      <RoomHeader />
     </>
   );
 };
