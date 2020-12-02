@@ -11,6 +11,7 @@
     "build": "webpack --progress --mode production"
   },
   "dependencies": {
+    "@primer/components": "^22.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hot-loader": "^4.13.0",
